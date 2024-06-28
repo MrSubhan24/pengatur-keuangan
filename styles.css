@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 350px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.balance, .income-expense, .transaction-container, .add-transaction {
+    margin: 20px 0;
+}
+
+.income-expense {
+    display: flex;
+    justify-content: space-between;
+}
+
+.income-expense div {
+    width: 48%;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.money {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.money.plus {
+    color: green;
+}
+
+.money.minus {
+    color: red;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.list li.minus {
+    border-right: 5px solid red;
+}
+
+.list li.plus {
+    border-right: 5px solid green;
+}
+
+.form-control {
+    margin: 10px 0;
+}
+
+.form-control label {
+    display: block;
+}
+
+.form-control input, .form-control select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-control div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.form-control div input {
+    margin-right: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #555;
+}

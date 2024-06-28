@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Pengatur Keuangan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Aplikasi Pengatur Keuangan</h1>
+        <div class="balance">
+            <h2>Total Saldo: <span id="balance">Rp0</span></h2>
+        </div>
+        <div class="income-expense">
+            <div>
+                <h3>Pemasukan</h3>
+                <p id="money-plus" class="money plus">Rp0</p>
+            </div>
+            <div>
+                <h3>Pengeluaran</h3>
+                <p id="money-minus" class="money minus">Rp0</p>
+            </div>
+        </div>
+        <div class="transaction-container">
+            <h3>Daftar Transaksi</h3>
+            <ul id="list" class="list"></ul>
+        </div>
+        <div class="add-transaction">
+            <h3>Tambah Transaksi</h3>
+            <form id="form">
+                <div class="form-control">
+                    <label for="text">Keterangan</label>
+                    <input type="text" id="text" placeholder="Masukkan keterangan...">
+                </div>
+                <div class="form-control">
+                    <label>Jenis Transaksi</label>
+                    <div>
+                        <input type="radio" id="income" name="type" value="income" checked>
+                        <label for="income">Pemasukan</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="expense" name="type" value="expense">
+                        <label for="expense">Pengeluaran</label>
+                    </div>
+                </div>
+                <div class="form-control" id="category-container" style="display: none;">
+                    <label for="category">Kategori</label>
+                    <select id="category">
+                        <option value="Makanan">Makanan</option>
+                        <option value="Transportasi">Transportasi</option>
+                        <option value="Hiburan">Hiburan</option>
+                        <option value="Lain-lain">Lain-lain</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label for="amount">Jumlah</label>
+                    <input type="number" id="amount" placeholder="Masukkan jumlah...">
+                </div>
+                <button class="btn">Tambah Transaksi</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
