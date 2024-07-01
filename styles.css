@@ -5,7 +5,7 @@
     font-family: Arial, sans-serif;
 }
 body {
-    background-color: #f4f4f4;
+    background-color: #007bff; /* Warna biru untuk latar belakang */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: black; 
 }
 .balance {
     text-align: center;
@@ -95,6 +95,7 @@ h1 {
 }
 .add-transaction h3 {
     margin-bottom: 10px;
+    color: #fff; /* Warna teks putih */
 }
 .form-control {
     margin-bottom: 10px;
@@ -125,7 +126,7 @@ h1 {
 .btn {
     width: 100%;
     padding: 10px;
-    background: #007bff;
+    background: #0056b3; /* Warna biru tua untuk tombol */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -133,5 +134,5 @@ h1 {
     font-size: 1em;
 }
 .btn:hover {
-    background: #0056b3;
+    background: #003f7f; /* Warna biru yang lebih tua saat tombol di-hover */
 }
